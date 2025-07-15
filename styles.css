@@ -43,54 +43,63 @@ body {
 .nav-logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2c3e50;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-logo:hover {
-    color: #3498db;
+    transform: scale(1.02);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .logo-icon {
     position: relative;
-    margin-right: 12px;
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    width: 45px;
+    height: 45px;
+    background: #2c3e50;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 .nav-logo:hover .logo-icon {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-.logo-icon i {
-    color: white;
-    font-size: 1.2rem;
-    position: absolute;
-    transition: all 0.3s ease;
+.house-icon {
+    width: 30px;
+    height: 30px;
 }
 
-.logo-icon .fa-home {
-    top: 8px;
-    left: 8px;
-    font-size: 1rem;
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
-.logo-icon .fa-hammer {
-    bottom: 6px;
-    right: 6px;
-    font-size: 0.9rem;
-    transform: rotate(-15deg);
+.company-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.company-slogan {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #3498db;
+    letter-spacing: 0.5px;
+    line-height: 1;
 }
 
 .nav-menu {
@@ -254,6 +263,17 @@ body {
     font-weight: 300;
     letter-spacing: 0.5px;
     line-height: 1.8;
+}
+
+.hero-slogan {
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    color: #f8f9fa !important;
+    margin-bottom: 1rem !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease 0.1s both;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -838,36 +858,50 @@ section {
     margin-bottom: 1rem;
 }
 
+.footer-logo .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
 .footer-logo .logo-icon {
     position: relative;
-    margin-right: 12px;
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    width: 45px;
+    height: 45px;
+    background: #2c3e50;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.footer-logo .logo-icon i {
+.footer-logo .house-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-logo .logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-logo .company-name {
+    font-size: 1.1rem;
+    font-weight: 700;
     color: white;
-    font-size: 1.2rem;
-    position: absolute;
+    letter-spacing: 1px;
+    line-height: 1;
 }
 
-.footer-logo .logo-icon .fa-home {
-    top: 8px;
-    left: 8px;
-    font-size: 1rem;
-}
-
-.footer-logo .logo-icon .fa-hammer {
-    bottom: 6px;
-    right: 6px;
-    font-size: 0.9rem;
-    transform: rotate(-15deg);
+.footer-logo .company-slogan {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #3498db;
+    letter-spacing: 0.5px;
+    line-height: 1;
 }
 
 .footer-section p {
