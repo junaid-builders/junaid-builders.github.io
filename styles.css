@@ -897,9 +897,9 @@ section {
 }
 
 .footer-logo .company-slogan {
-    font-size: 0.65rem;
+    font-size: 0.065rem;
     font-weight: 500;
-    color: #3498db;
+    color: red;
     letter-spacing: 0.5px;
     line-height: 1;
 }
